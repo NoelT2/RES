@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email OSINT Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="container">
+    <h1>Email OSINT Tool</h1>
+    <p>Multi Email Checker</p><textarea id="emailInput" placeholder="Enter emails (one per line or comma separated)"></textarea>
+<button onclick="checkEmails()">Check All</button>
+
+<div id="loading" class="hidden">Checking...</div>
+
+<div id="result" class="hidden">
+    <h2>Results</h2>
+    <div id="resultList"></div>
+</div>
+
+</div><script src="script.js"></script></body>
+</html>
