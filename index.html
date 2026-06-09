@@ -1,20 +1,27 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email OSINT Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body><div class="container">
+<body>
+<div class="container">
     <h1>Email OSINT Tool</h1>
-    <p>Multi Email Checker</p><textarea id="emailInput" placeholder="Enter emails (one per line or comma separated)"></textarea>
-<button onclick="checkEmails()">Check All</button>
+    <p>Multi Email Checker</p>
+    
+    <textarea id="emailInput" placeholder="Enter emails (one per line or comma separated)"></textarea>
+    <button onclick="checkEmails()">Check OSINT Data</button>
 
-<div id="loading" class="hidden">Checking...</div>
+    <div id="loading" class="hidden">Scanning databases...</div>
 
-<div id="result" class="hidden">
-    <h2>Results</h2>
-    <div id="resultList"></div>
+    <div id="result" class="hidden">
+        <h2>Analysis Results</h2>
+        <div id="resultList"></div>
+    </div>
 </div>
-
-</div><script src="script.js"></script></body>
+<script src="script.js"></script>
+</body>
 </html>
